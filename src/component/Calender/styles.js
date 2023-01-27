@@ -9,6 +9,7 @@ display:flex ;
 flex-direction:column ;
 padding:14px 24px ;
 border-radius:8px ;
+max-width: 400px;
 
 `
 export const Header=styled.div`
@@ -17,9 +18,10 @@ display:flex ;
 
 align-items:center ;
 &>p{
-    font-size:24px ;
+    font-size:14px ;
     font-weight:700 ;
     color:${props=>props.theme.colorText} ;
+    margin-left:16px ;
 }
 `
 export const CalendarS=styled(Calendar)`
@@ -28,6 +30,7 @@ color:${props=>props.theme.colorText} ;
 
 `
 export const Dots=styled.div`
+
 
 
 `

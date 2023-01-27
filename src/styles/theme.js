@@ -6,7 +6,10 @@ export const themes = {
     lightBlue:'#EEF7FE',
          agendarColor:'#F2B457' ,
          checkinColor:'#A3E31A',
-         confermada:'#57B4F2',
-         checkoutColor:'#9575CD'
+         confirmado:'#57B4F2',
+         muesEvent:'#9575CD',
+         lightgray:'#F0F3F6',
+         diactiveText:'#8C9BA5',
+         grayBorder:'#DFE3E6'
 
      };

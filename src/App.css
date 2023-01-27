@@ -5,5 +5,6 @@
 .main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 35px;
     padding: 200px 66px;
 }

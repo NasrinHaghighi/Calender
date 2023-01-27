@@ -24,12 +24,14 @@ if( view === 'month' && planedDays.includes(formatDate)){
   console.log(plantype)
    return (<Dots> {plantype.map((pla)=>{
         if(pla === 'checkin'){
-          return  <Span style={{backgroundColor:'green'}}>&nbsp;</Span>
+          return  <Span style={{backgroundColor:'#A3E31A'}}>&nbsp;</Span>
         }else if(pla === 'confirmado'){
-            return  <Span style={{backgroundColor:'yellow'}}>&nbsp;</Span>
+            return  <Span style={{backgroundColor:'#57B4F2'}}>&nbsp;</Span>
         }else if(pla === 'agendar'){
-            return  <Span style={{backgroundColor:'blue'}}>&nbsp;</Span>
-        }
+            return  <Span style={{backgroundColor:'#F2B457'}}>&nbsp;</Span>
+        }else if(pla === 'checkout'){
+          return  <Span style={{backgroundColor:'#9575CD'}}>&nbsp;</Span>
+      }
     })}
 </Dots>)
    
