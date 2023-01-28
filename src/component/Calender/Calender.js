@@ -21,15 +21,15 @@ const tileContent = ({ date, view }) => {
 if( view === 'month' && planedDays.includes(formatDate)){
   let day=  data.find(d=>d.date===formatDate)
   let plantype =day.plan.map(pl=>pl.type)
-  console.log(plantype)
+  //console.log(plantype)
    return (<Dots> {plantype.map((pla)=>{
-        if(pla === 'checkin'){
+        if(pla === 'Check-ins'){
           return  <Span style={{backgroundColor:'#A3E31A'}}>&nbsp;</Span>
-        }else if(pla === 'confirmado'){
+        }else if(pla === 'Confirmadas'){
             return  <Span style={{backgroundColor:'#57B4F2'}}>&nbsp;</Span>
-        }else if(pla === 'agendar'){
+        }else if(pla === 'Por agendar'){
             return  <Span style={{backgroundColor:'#F2B457'}}>&nbsp;</Span>
-        }else if(pla === 'checkout'){
+        }else if(pla === 'Os meus eventos'){
           return  <Span style={{backgroundColor:'#9575CD'}}>&nbsp;</Span>
       }
     })}

@@ -8,14 +8,18 @@ import PlusIcon from '../../images/plus.svg'
 
 import { tabData } from '../../constant/MockData'
 import AgendaList from './AgendaList/AgendaList'
-
-
+import { useSelector, useDispatch } from 'react-redux'
+import {setAgendaType} from '../../featuers/AgendaTypeSlice'
 
 function Scheduled() {
+  const dispatch=useDispatch()
 const [activeTab, setActiveTab]=useState('Todos')//hard coding the active tab
     
 
-
+const handelTab=(e)=>{
+  setActiveTab(e.target.innerHTML)
+dispatch(setAgendaType(e.target.innerHTML))
+}
 
   
   return (
@@ -32,7 +36,7 @@ const [activeTab, setActiveTab]=useState('Todos')//hard coding the active tab
 
 <Tabs>
 {tabData.map((tap)=>{
-  return <span className={tap === activeTab ? 'active' : ''}>{tap}</span>
+  return <span className={tap === activeTab ? 'active' : ''} onClick={(e)=>handelTab(e)} value={activeTab}>{tap}</span>
 })}
 </Tabs>
 <AgendaList />

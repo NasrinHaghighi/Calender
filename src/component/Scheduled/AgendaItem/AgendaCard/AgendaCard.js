@@ -5,45 +5,58 @@ import {Conatiner, Time, Type, Info, Top, Bottom} from './styles'
 const typeColor=(type)=>{
     // eslint-disable-next-line default-case
     switch (type) {
-        case 'checkin':
+        case 'Check-ins':
         return 'checkin'
-        case 'confirmado':
+        case 'Confirmadas':
         return 'confirmado'
-        case 'agendar':
+        case 'Por agendar':
         return 'agendar'
-        case 'muesEvent':
+        case 'Os meus eventos':
         return 'muesEvent'
       }
 }
 const typeText=(type)=>{
     // eslint-disable-next-line default-case
     switch (type) {
-        case 'checkin':
+        case 'Check-ins':
         return <span>Check-in de</span>
-        case 'confirmado':
+        case 'Confirmadas':
         return <span>Visita confirmada de</span>
-        case 'agendar':
+        case 'Por agendar':
         return <span>Visita por agendar de</span>
-        case 'muesEvent':
+        case 'Os meus eventos':
         return <span>Os mues Eventos</span>
       }
 }
 
 
-function AgendaCard({item}) {
+function AgendaCard({pla}) {
 
-    console.log(item)
+//const plan =item.plan
+//console.log(pla)
   return (
-    <Conatiner>
-        <Time>{item.time}</Time>
-        <Type className={typeColor(item.type)}></Type>
-        <Info>
-            <Top>{typeText(item.type)} {item.name}</Top>
-            <Bottom>{item.room} . {item.location}</Bottom>
-        </Info>
+    <>
+   
+   
+ <Conatiner>
+    
+ 
+ <Time>{pla.time}</Time>
+ <Type className={typeColor(pla.type)}></Type>
 
-    </Conatiner>
+ <Info>
+     <Top>{typeText(pla.type)} {pla.name}</Top>
+     <Bottom>{pla.room} . {pla.location}</Bottom>
+ </Info>
+
+
+</Conatiner>
+
+
+   
+    </>
   )
 }
 
 export default AgendaCard
+

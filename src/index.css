@@ -12,12 +12,17 @@ code {
 .react-calendar__navigation {
     height: 72Px !important;
     background-color: #EEF7FE;
+    position: relative;
+    border-radius: 8px;
 }
 
 .react-calendar__navigation__label {
     font-size: 14px !important;
     font-weight: 700;
     color: #1D9AFA !important;
+    position: absolute;
+    left: 10px;
+    top: 33%;
 }
 
 .react-calendar__navigation button:enabled:hover {
@@ -27,21 +32,29 @@ code {
 .react-calendar__navigation__prev2-button {
     font-size: 20px;
     color: #1D9AFA !important;
+    display: none;
 }
 
 .react-calendar__navigation__next2-button {
     font-size: 20px;
     color: #1D9AFA !important;
+    display: none;
 }
 
 .react-calendar__navigation__prev-button {
     font-size: 20px;
     color: #1D9AFA !important;
+    position: absolute;
+    right: 40px;
+    top: 33%;
 }
 
 .react-calendar__navigation__next-button {
     font-size: 20px;
     color: #1D9AFA !important;
+    position: absolute;
+    right: 10px;
+    top: 33%;
 }
 
 .react-calendar__tile--active {
