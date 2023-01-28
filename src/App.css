@@ -1,10 +1,14 @@
 .App {
-    background-color: #F5F7FA;
+    max-width: 1920px;
+    margin: 0 auto;
 }
 
 .main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 35px;
-    padding: 200px 66px;
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 100px 145px;
+    background-color: #F5F7FA;
 }
