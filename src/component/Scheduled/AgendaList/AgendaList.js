@@ -1,4 +1,4 @@
-import React from 'react'
+import React ,{useEffect}from 'react'
 import {Container} from './styles'
 
 
@@ -9,13 +9,18 @@ import { useSelector, useDispatch } from 'react-redux'
 
 function AgendaList() {
   const selectedDay=useSelector(state=>state.selectedDay.selectedDay)
+//console.log(data)
+// console.log(selectedDay)
+  const SelectedDayAndMore=data.filter((d)=>{
+    return d.date >= selectedDay
+  })
 
-  const SelectedDayAndMore=data.filter((d)=>d.date >= selectedDay)
   //console.log(SelectedDayAndMore)
+
+
    
   return (
     <Container>
-      
       {
        SelectedDayAndMore && SelectedDayAndMore.map((item)=>{
         return <AgendaItem item={item}/>
@@ -28,3 +33,16 @@ function AgendaList() {
 }
 
 export default AgendaList
+
+
+
+// let SelectedDayAndMore=[]
+//   useEffect(() => {
+//   // eslint-disable-next-line no-lone-blocks
+//   {data.filter((d)=>{
+//     if( d.date >= selectedDay){
+//       SelectedDayAndMore.push(d)
+//     }
+   
+//   })}
+//   }, [selectedDay])

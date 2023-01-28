@@ -17,7 +17,12 @@ data.map((item)=>{
 
 
 const tileContent = ({ date, view }) => {
-    var formatDate= (date.getMonth() + 1) + '/' + date.getDate() + '/' +  date.getFullYear();
+  let dd=date.getDate()
+  if(dd<10){
+    dd='0'+dd
+  }
+    var formatDate= (date.getMonth() + 1) + '/' +dd + '/' +  date.getFullYear();
+    
 if( view === 'month' && planedDays.includes(formatDate)){
   let day=  data.find(d=>d.date===formatDate)
   let plantype =day.plan.map(pl=>pl.type)
@@ -49,7 +54,13 @@ function Calender() {
     const dispatch=useDispatch()
 
     const handelClick=(value)=>{
-        var formatDate= (value.getMonth() + 1) + '/' + value.getDate() + '/' +  value.getFullYear();
+      console.log(value)
+     let dd=value.getDate()
+    if(dd<10){
+      dd='0'+dd
+    }
+        var formatDate= (value.getMonth() + 1) + '/' + dd + '/' +  value.getFullYear();
+        console.log(formatDate)
         dispatch(setSelectedday(formatDate))
     }
   return (
@@ -58,7 +69,7 @@ function Calender() {
     <Container>
        
        <Header>
-        <img src={CalenderIcon} alt="react logo" />
+        <img src={CalenderIcon} alt="calender" />
        <p>Calendário</p>
        </Header>
       <CalendarS onChange={onChange} value={value} 
