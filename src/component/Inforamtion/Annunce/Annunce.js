@@ -8,10 +8,11 @@ import PriceIcon from '../../../images/price.png'
 import GoIcon from '../../../images/go.png'
 
 function Annunce({roomInfo}) {
-  
+  //console.log(roomInfo)
   return (
     <Container>
-      <Title><img src={AnnunceIcon} alt="ann" /> <span>Anúncio</span></Title>
+       {roomInfo.personInfo.name} 
+      {/* <Title><img src={AnnunceIcon} alt="ann" /> <span>Anúncio</span></Title>
       <Info>
         <Photo><img src={Room} alt="room" /></Photo>
         <Description>
@@ -34,7 +35,7 @@ function Annunce({roomInfo}) {
         <Detalhes>
           <span><img src={GoIcon} alt="go" /> </span>
            Ver Detalhes</Detalhes>
-      </Btn>
+      </Btn> */}
     </Container>
   )
 }

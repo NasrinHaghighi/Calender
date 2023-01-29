@@ -3,17 +3,17 @@ export const data=[
     id:1,
     date:'2/03/2023',
     plan:[
-        {time:'9:00',type:'Check-ins',personInfo: {name:'Maria', entrada:'02/21/20223', saida:'02/25/2023', tel:'99999', email:'emailname@email.com', nationality:'Portuges' ,age:'30-40', job:'Estudante na Universidade Católica'}, roomInfo:{room:'Room 1', location:'Rua Visconde da Cunha', price:'330'},  },
-        {time:'11:00',type:'Confirmadas', personInfo: {name:'Joa', entrada:'02/25/20223', saida:'02/26/2023',tel:'99999', email:'emailname@email.com', nationality:'German' ,age:'50-60', job:'Professor'}, roomInfo:{room:'Room 2', location:'Rua de Arrabida', price:'350'}}, 
+        {time:'9:00',type:'Check-ins',personInfo: {name:'Maria', entrada:'02/21/20223', saida:'02/25/2023', tel:'99999', email:'mmmmmm@email.com', nationality:'Portuges' ,age:'30-40', job:'Estudante na Universidade Católica'}, roomInfo:{room:'Room 1', location:'Rua Visconde da Cunha', price:'330'},  },
+        {time:'11:00',type:'Confirmadas', personInfo: {name:'Joa', entrada:'02/25/20223', saida:'02/26/2023',tel:'88888', email:'eeeeeee@email.com', nationality:'German' ,age:'50-60', job:'Professor'}, roomInfo:{room:'Room 12', location:'Rua de Arrabida', price:'350'}}, 
       
     ]},
     {
         id:2,
         date:'2/05/2023',
         plan:[
-            {time:'10:00',type:'Por agendar',personInfo: {name:'Sara', entrada:'02/21/20223', saida:'02/25/2023', tel:'99999', email:'emailname@email.com', nationality:'German' ,age:'70-80', job:'Estudante na Universidade Católica'}, roomInfo:{room:'Room 1', location:'Rua Visconde da Cunha', price:'330'},  },
-            {time:'11:00',type:'Os meus eventos', personInfo: {name:'Joa', entrada:'02/25/20223', saida:'02/26/2023',tel:'99999', email:'emailname@email.com', nationality:'American' ,age:'40-50', job:'Professor'}, roomInfo:{room:'Room 2', location:'Rua de Arrabida', price:'350'}}, 
-            {time:'11:00',type:'Check-ins', personInfo: {name:'Joa', entrada:'02/25/20223', saida:'02/26/2023',tel:'99999', email:'emailname@email.com', nationality:'spanish' ,age:'20-30', job:'Professor'}, roomInfo:{room:'Room 2', location:'Rua de Arrabida', price:'350'}}, 
+            {time:'10:00',type:'Por agendar',personInfo: {name:'Sara', entrada:'02/21/20223', saida:'02/25/2023', tel:'666666', email:'sssss@email.com', nationality:'German' ,age:'70-80', job:'Estudante na Universidade Porto'}, roomInfo:{room:'Room 11', location:'Ave Altino', price:'550'},  },
+            {time:'11:00',type:'Os meus eventos', personInfo: {name:'Helder', entrada:'02/25/20223', saida:'02/26/2023',tel:'5555555', email:'eeeeeee@email.com', nationality:'American' ,age:'40-50', job:'carpinteiro'}, roomInfo:{room:'Room 2', location:'Rua de Arrabida', price:'350'}}, 
+            {time:'11:00',type:'Check-ins', personInfo: {name:'Patricia', entrada:'02/25/20223', saida:'02/26/2023',tel:'8888888', email:'qqqqqqqqq@email.com', nationality:'spanish' ,age:'20-30', job:'trabalha no restaurante'}, roomInfo:{room:'Room 2', location:'Rua de Arrabida', price:'350'}}, 
           
         ]},
 // },
