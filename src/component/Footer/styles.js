@@ -47,7 +47,7 @@ display:flex ;
 justify-content:flex-end ;
 align-items:center ;
 &>li{
-    cursor: pointer;
+    cursor: pointer; 
     margin-right:35px;
     color:${props=>props.theme.diactiveText};
     font-size:14px ;

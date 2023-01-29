@@ -7,11 +7,13 @@ export const Container=styled.div`
 background-color:${props=>props.theme.white} ;
 display:flex ;
 flex-direction:column ;
-padding:14px 24px ;
+padding:14px 44px ;
+margin-left:20px ;
 border-radius:8px ;
-max-width: 400px;
+height:450px ;
 
 `
+
 export const Header=styled.div`
 
 display:flex ;

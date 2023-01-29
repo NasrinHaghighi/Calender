@@ -4,7 +4,7 @@
 import React, {useState} from 'react'
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
-import {CalendarS,Dots,Span, Container, Header} from './styles.js'
+import {CalendarWrapper,CalendarS,Dots,Span, Container, Header} from './styles.js'
 import { data } from '../../constant/MockData';
 import { useSelector, useDispatch } from 'react-redux'
 import {setSelectedday} from '../../featuers/SelectedDaySlice'
@@ -67,7 +67,7 @@ function Calender() {
 
 
     <Container>
-       
+     
        <Header>
         <img src={CalenderIcon} alt="calender" />
        <p>Calendário</p>
@@ -79,7 +79,7 @@ function Calender() {
       showNeighboringMonth={true}
       
       />
-   
+  
     </Container>
 
 
