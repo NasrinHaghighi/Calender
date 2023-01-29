@@ -4,27 +4,27 @@ import {Date} from './styles'
 import Person from '../../../images/person.png'
 import Joa from '../../../images/joa.png'
 
-function PersonalInfo() {
+function PersonalInfo({personInfo}) {
   return (
     <Container>
     <Title><img src={Person} alt="person" /> <span>Dados do Inquilino</span></Title>
     <Info>
       <Photo><img src={Joa} alt="joa" /></Photo>
       <Description>
-        <Tit>John</Tit>
+        <Tit>{personInfo.name}</Tit>
         <DesItem className='personal'>
-        França · Masculino · 25-34 anos
+        {personInfo.nationality} · Masculino · {personInfo.age} anos
           </DesItem>
         <DesItem className='personal'>
-        Estudante na Universidade Católica
+       {personInfo.job}
           </DesItem>
         <DesItem className='personal'>
         Data de entrada :
-          <Date>21/01/2021 </Date>
+          <Date>{personInfo.entrada}</Date>
           </DesItem>
           <DesItem className='personal'>
           Data de saída :
-          <Date>21/01/2021 </Date>
+          <Date>{personInfo.saida} </Date>
           </DesItem>
       </Description>
        

@@ -16,9 +16,7 @@ const AgendaItem =({item})=> {
   const day = date.getUTCDate();
   const monthName=months[date.getMonth()]
 
-const handleSelectedEvent=(PLA)=>{
-console.log(PLA)
-}
+
    
   return (
     <>
@@ -26,7 +24,7 @@ console.log(PLA)
       
   item.plan.map((pla, index)=>{
    if(pla.type === agendaType ){
-    return    <ListItem onClick={()=>handleSelectedEvent(pla)}>
+    return    <ListItem >
       <Title>{dayName},{day} de  {monthName}</Title>
     <AgendaCard key={index} pla={pla}/>
     </ListItem>
@@ -38,16 +36,14 @@ console.log(PLA)
      
      
     {agendaType === 'Todos' &&
-   
-       item.plan.map((pla, index)=>{
-        return <ListItem onClick={()=>handleSelectedEvent(pla)}>
-        <Title>{dayName},{day} de  {monthName}</Title>
-      <AgendaCard key={index} pla={pla}/>
-      </ListItem>
+    <ListItem >
+       <Title>{dayName},{day} de  {monthName}</Title> 
+      { item.plan.map((pla, index)=>{
+        return <AgendaCard key={index} pla={pla}/>
       
        
     })}
-     
+      </ListItem>  }
     </>
   )
 }

@@ -13,7 +13,7 @@ export const SelectedEventSlice = createSlice({
  
   
     setSelectedday: (state, action) => {
-      console.log(action.payload)
+     state.selectedEvent =action.payload
     },
   },
 })

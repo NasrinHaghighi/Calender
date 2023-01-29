@@ -1,7 +1,7 @@
 import React from 'react'
 import {Conatiner, Time, Type, Info, Top, Bottom} from './styles'
-
-
+import { useDispatch } from 'react-redux'
+import {setSelectedday} from '../../../../featuers/SelectedEventSlice'
 const typeColor=(type)=>{
     // eslint-disable-next-line default-case
     switch (type) {
@@ -31,14 +31,19 @@ const typeText=(type)=>{
 
 
 function AgendaCard({pla}) {
+  const dispatch=useDispatch()
 
 //const plan =item.plan
-console.log(pla)
+//console.log(pla)
+
+const handelSelectedEvent=(pla)=>{
+dispatch(setSelectedday(pla))
+}
   return (
     <>
    
    
- <Conatiner>
+ <Conatiner onClick={()=>handelSelectedEvent(pla)}>
     
  
  <Time>{pla.time}</Time>

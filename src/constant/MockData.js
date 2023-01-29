@@ -5,8 +5,17 @@ export const data=[
     plan:[
         {time:'9:00',type:'Check-ins',personInfo: {name:'Maria', entrada:'02/21/20223', saida:'02/25/2023', tel:'99999', email:'emailname@email.com', nationality:'Portuges' ,age:'30-40', job:'Estudante na Universidade Católica'}, roomInfo:{room:'Room 1', location:'Rua Visconde da Cunha', price:'330'},  },
         {time:'11:00',type:'Confirmadas', personInfo: {name:'Joa', entrada:'02/25/20223', saida:'02/26/2023',tel:'99999', email:'emailname@email.com', nationality:'German' ,age:'50-60', job:'Professor'}, roomInfo:{room:'Room 2', location:'Rua de Arrabida', price:'350'}}, 
-       
-    ]
+      
+    ]},
+    {
+        id:2,
+        date:'2/05/2023',
+        plan:[
+            {time:'10:00',type:'Por agendar',personInfo: {name:'Sara', entrada:'02/21/20223', saida:'02/25/2023', tel:'99999', email:'emailname@email.com', nationality:'German' ,age:'70-80', job:'Estudante na Universidade Católica'}, roomInfo:{room:'Room 1', location:'Rua Visconde da Cunha', price:'330'},  },
+            {time:'11:00',type:'Os meus eventos', personInfo: {name:'Joa', entrada:'02/25/20223', saida:'02/26/2023',tel:'99999', email:'emailname@email.com', nationality:'American' ,age:'40-50', job:'Professor'}, roomInfo:{room:'Room 2', location:'Rua de Arrabida', price:'350'}}, 
+            {time:'11:00',type:'Check-ins', personInfo: {name:'Joa', entrada:'02/25/20223', saida:'02/26/2023',tel:'99999', email:'emailname@email.com', nationality:'spanish' ,age:'20-30', job:'Professor'}, roomInfo:{room:'Room 2', location:'Rua de Arrabida', price:'350'}}, 
+          
+        ]},
 // },
 // {
 //     id:2,
@@ -15,8 +24,7 @@ export const data=[
 //         {time:'9:00',type:'Check-ins', name:'Sara', room:'Room 1', location:'Rua Visconde da Cunha'},
 //         {time:'11:00',type:'Confirmadas', name:'Ana', room:'Room 1', location:'Rua Visconde da Cunha'},
 //         {time:'12:00',type:'Por agendar', name:'luis',room:'Room 1', location:'Rua Visconde da Cunha' }
-//     ]
-// },
+         //},
 // {
 //     id:3,
 //     date:'2/07/2023',
@@ -110,7 +118,7 @@ export const data=[
 //         {time:'17:00',type:'Por agendar', name:'Ana', room:'Room 1', location:'Rua Visconde da Cunha'},
        
 //     ]
- }
+ 
 
 ]
 
