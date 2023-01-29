@@ -4,9 +4,10 @@ import styled from "styled-components";
 export const Container=styled.div`
 background-color:${props=>props.theme.white} ;
 padding:16px 22px ;
-width:500px ;
+max-width:500px ;
 border-radius:8px ;
 margin-bottom:24px ;
+
 `
 export const Title=styled.div`
 margin-bottom: 22px;
@@ -25,8 +26,6 @@ grid-template-columns: 1fr 3fr;
 grid-template-rows: 1fr;
 grid-column-gap: 0px;
 grid-row-gap: 0px;
-
-
 `
  export const Photo=styled.div`
 

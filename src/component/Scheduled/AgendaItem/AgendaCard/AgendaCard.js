@@ -46,7 +46,7 @@ function AgendaCard({pla}) {
 
  <Info>
      <Top>{typeText(pla.type)} {pla.name}</Top>
-     <Bottom>{pla.room} . {pla.location}</Bottom>
+     <Bottom>{pla.type === 'Os meus eventos' ? 'Address' : pla.room} . {pla.location}</Bottom>
  </Info>
 
 

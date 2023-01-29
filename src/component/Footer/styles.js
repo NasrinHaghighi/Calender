@@ -12,6 +12,7 @@ grid-template-columns: 1fr 2fr 3fr;
 grid-column-gap: 0px;
 grid-row-gap: 0px;
 
+
 `
 
 

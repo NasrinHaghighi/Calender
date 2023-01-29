@@ -9,42 +9,40 @@ import { data } from '../../constant/MockData';
 import { useSelector, useDispatch } from 'react-redux'
 import {setSelectedday} from '../../featuers/SelectedDaySlice'
 import CalenderIcon from '../../images/Icon.png'
+import {makeFormatDay} from '../../utils'
 
+
+//extract day with plan from api data//
 const planedDays=[]
 data.map((item)=>{
     planedDays.push(item.date)
 })
 
 
+//add dots in calender day//
 const tileContent = ({ date, view }) => {
-  let dd=date.getDate()
-  if(dd<10){
-    dd='0'+dd
-  }
-    var formatDate= (date.getMonth() + 1) + '/' +dd + '/' +  date.getFullYear();
-    
+    var formatDate=makeFormatDay(date) 
+   
 if( view === 'month' && planedDays.includes(formatDate)){
   let day=  data.find(d=>d.date===formatDate)
   let plantype =day.plan.map(pl=>pl.type)
   //console.log(plantype)
    return (<Dots> {plantype.map((pla)=>{
         if(pla === 'Check-ins'){
-          return  <Span style={{backgroundColor:'#A3E31A'}}>&nbsp;</Span>
+          return  <Span style={{backgroundColor:'#A3E31A'}}>*</Span>
         }else if(pla === 'Confirmadas'){
-            return  <Span style={{backgroundColor:'#57B4F2'}}>&nbsp;</Span>
+            return  <Span style={{backgroundColor:'#57B4F2'}}>*</Span>
         }else if(pla === 'Por agendar'){
-            return  <Span style={{backgroundColor:'#F2B457'}}>&nbsp;</Span>
+            return  <Span style={{backgroundColor:'#F2B457'}}>*</Span>
         }else if(pla === 'Os meus eventos'){
-          return  <Span style={{backgroundColor:'#9575CD'}}>&nbsp;</Span>
+          return  <Span style={{backgroundColor:'#9575CD'}}>*</Span>
       }
     })}
 </Dots>)
    
 }else{
     return null
-}
-    
-}
+}}
 
 ;
 
@@ -54,29 +52,25 @@ function Calender() {
     const dispatch=useDispatch()
 
     const handelClick=(value)=>{
-      console.log(value)
-     let dd=value.getDate()
-    if(dd<10){
-      dd='0'+dd
-    }
-        var formatDate= (value.getMonth() + 1) + '/' + dd + '/' +  value.getFullYear();
-        console.log(formatDate)
+    
+        var formatDate=makeFormatDay(value) 
         dispatch(setSelectedday(formatDate))
     }
   return (
 
 
     <Container>
-     
-       <Header>
+     <Header>
         <img src={CalenderIcon} alt="calender" />
        <p>Calendário</p>
        </Header>
+       
       <CalendarS onChange={onChange} value={value} 
       onClickDay={handelClick(value)}
       locale='pt'
       tileContent={tileContent}
       showNeighboringMonth={true}
+      formatShortWeekday={(locale,value) => ['D', 'S', 'T', 'Q', 'Q', 'S', 'S'][value.getDay()]}
       
       />
   

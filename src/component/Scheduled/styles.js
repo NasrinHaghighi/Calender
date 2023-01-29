@@ -6,7 +6,7 @@ display:flex ;
 flex-direction:column ;
 padding:14px 24px ;
 border-radius:8px ;
-max-width: 500px;
+
 
 `
 export const Header=styled.div`

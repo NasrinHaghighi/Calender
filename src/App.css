@@ -1,14 +1,17 @@
 .App {
     max-width: 1920px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
 
 .main {
+    flex-grow: 1;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 35px;
-    margin: 0 auto;
+    grid-template-columns: 1fr 2fr 2.3fr;
+    grid-column-gap: 45px;
     max-width: 100%;
-    padding: 100px 165px;
+    padding: 100px 110px;
     background-color: #F5F7FA;
 }

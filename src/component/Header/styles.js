@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
 export const Container=styled.div`
-max-width:1920px;
 
-background-color:${props=>props.theme.white} ;
+
+ background-color:${props=>props.theme.white} ;
 height:80px ;
 padding:20px 145px ;
-margin:0 auto ;
+
 `
 
 

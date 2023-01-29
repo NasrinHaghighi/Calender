@@ -10,6 +10,8 @@ export const themes = {
          muesEvent:'#9575CD',
          lightgray:'#F0F3F6',
          diactiveText:'#8C9BA5',
-         grayBorder:'#DFE3E6'
+         grayBorder:'#DFE3E6',
+         boxShadow:'#00000040',
+         bg:'#F5F7FA'
 
      };
