@@ -11,9 +11,9 @@ export const data=[
         id:2,
         date:'2/05/2023',
         plan:[
-            {time:'10:00',type:'Por agendar',personInfo: {name:'Sara', entrada:'02/21/20223', saida:'02/25/2023', tel:'666666', email:'sssss@email.com', nationality:'German' ,age:'70-80', job:'Estudante na Universidade Porto'}, roomInfo:{room:'Room 11', location:'Ave Altino', price:'550'},  },
-            {time:'11:00',type:'Os meus eventos', personInfo: {name:'Helder', entrada:'02/25/20223', saida:'02/26/2023',tel:'5555555', email:'eeeeeee@email.com', nationality:'American' ,age:'40-50', job:'carpinteiro'}, roomInfo:{room:'Room 2', location:'Rua de Arrabida', price:'350'}}, 
-            {time:'11:00',type:'Check-ins', personInfo: {name:'Patricia', entrada:'02/25/20223', saida:'02/26/2023',tel:'8888888', email:'qqqqqqqqq@email.com', nationality:'spanish' ,age:'20-30', job:'trabalha no restaurante'}, roomInfo:{room:'Room 2', location:'Rua de Arrabida', price:'350'}}, 
+            {time:'10:00',type:'Por agendar',personInfo: {name:'Sara', entrada:'02/21/20223', saida:'02/25/2023', tel:'666666', email:'sssss@email.com', nationality:'German' ,age:'70-80', job:'Estudante na Universidade Porto'}, roomInfo:{room:'Room 11', location:'Ave Altino', price:'250'},  },
+            {time:'11:00',type:'Os meus eventos', personInfo: {name:'Helder', entrada:'02/25/20223', saida:'02/26/2023',tel:'5555555', email:'eeeeeee@email.com', nationality:'American' ,age:'40-50', job:'carpinteiro'}, roomInfo:{room:'Room 32', location:'Rua de Arrabida', price:'750'}}, 
+            {time:'12:00',type:'Check-ins', personInfo: {name:'Patricia', entrada:'02/25/20223', saida:'02/26/2023',tel:'8888888', email:'qqqqqqqqq@email.com', nationality:'spanish' ,age:'20-30', job:'trabalha no restaurante'}, roomInfo:{room:'Room 22', location:'Rua de Arrabida', price:'850'}}, 
           
         ]},
 // },

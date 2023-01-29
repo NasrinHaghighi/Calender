@@ -11,20 +11,20 @@ function PersonalInfo({personInfo}) {
     <Info>
       <Photo><img src={Joa} alt="joa" /></Photo>
       <Description>
-        <Tit>{personInfo.name}</Tit>
+        <Tit>{personInfo.personInfo.name}</Tit>
         <DesItem className='personal'>
-        {personInfo.nationality} · Masculino · {personInfo.age} anos
+        {personInfo.personInfo.nationality} · Masculino · {personInfo.personInfo.age} anos
           </DesItem>
         <DesItem className='personal'>
-       {personInfo.job}
+       {personInfo.personInfo.job}
           </DesItem>
         <DesItem className='personal'>
         Data de entrada :
-          <Date>{personInfo.entrada}</Date>
+          <Date>{personInfo.personInfo.entrada}</Date>
           </DesItem>
           <DesItem className='personal'>
           Data de saída :
-          <Date>{personInfo.saida} </Date>
+          <Date>{personInfo.personInfo.saida} </Date>
           </DesItem>
       </Description>
        

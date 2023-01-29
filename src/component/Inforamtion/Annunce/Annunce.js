@@ -11,21 +11,21 @@ function Annunce({roomInfo}) {
   //console.log(roomInfo)
   return (
     <Container>
-       {roomInfo.personInfo.name} 
-      {/* <Title><img src={AnnunceIcon} alt="ann" /> <span>Anúncio</span></Title>
+    
+    <Title><img src={AnnunceIcon} alt="ann" /> <span>Anúncio</span></Title>
       <Info>
         <Photo><img src={Room} alt="room" /></Photo>
         <Description>
-          <Tit>{roomInfo.room}</Tit>
+          <Tit>{roomInfo.roomInfo.room}</Tit>
           <DesItem>
-            <img src={LocationIcon} alt="location" /> <span>{roomInfo.location}</span>
+            <img src={LocationIcon} alt="location" /> <span>{roomInfo.roomInfo.location}</span>
             </DesItem>
           <DesItem>
             <img src={AddressIcon} alt="address" /> <span>ID 1234551202 | Quarto nº 5  </span>
             </DesItem>
           <DesItem>
             <img src={PriceIcon} alt="price" /> 
-            <span>Renda mensal <Price>: € {roomInfo.price}</Price> </span>
+            <span>Renda mensal <Price>: € {roomInfo.roomInfo.price}</Price> </span>
             </DesItem>
         </Description>
          
@@ -35,7 +35,7 @@ function Annunce({roomInfo}) {
         <Detalhes>
           <span><img src={GoIcon} alt="go" /> </span>
            Ver Detalhes</Detalhes>
-      </Btn> */}
+      </Btn> 
     </Container>
   )
 }
