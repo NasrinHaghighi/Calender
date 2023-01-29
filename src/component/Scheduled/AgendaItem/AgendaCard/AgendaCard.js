@@ -33,7 +33,7 @@ const typeText=(type)=>{
 function AgendaCard({pla}) {
 
 //const plan =item.plan
-//console.log(pla)
+console.log(pla)
   return (
     <>
    
@@ -46,7 +46,7 @@ function AgendaCard({pla}) {
 
  <Info>
      <Top>{typeText(pla.type)} {pla.name}</Top>
-     <Bottom>{pla.type === 'Os meus eventos' ? 'Address' : pla.room} . {pla.location}</Bottom>
+     <Bottom>{pla.type === 'Os meus eventos' ? 'Address' : pla.roomInfo.room} . {pla.roomInfo.location}</Bottom>
  </Info>
 
 

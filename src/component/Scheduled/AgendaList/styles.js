@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container =styled.div`
 margin:40px 0 ;
 padding:0 10px ;
-max-height:500px ;
+max-height:700px ;
 overflow-y:scroll;
 &::-webkit-scrollbar {
    background-color:#f5f5f5;
