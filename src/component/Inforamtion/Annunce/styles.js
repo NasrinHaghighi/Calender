@@ -34,20 +34,54 @@ grid-row-gap: 0px;
  export const Description=styled.div`
  margin-left:20px ;
  `
-//  export const Tit=styled.div`
-//   font-size:18px ;
-//   margin-bottom:10px ;
-//     font-weight:700 ;
-//     color:${props=>props.theme.colorText};
+ export const Tit=styled.div`
+  font-size:18px ;
+  margin-bottom:7px ;
+    font-weight:700 ;
+    color:${props=>props.theme.colorText};
 
-//  `
-//  export const DesItem=styled.div`
-// margin-bottom:10px ;
-// &>span{
-//     color:${props=>props.theme.colorText};  
-// }
-//  `
-//  export const Price=styled.sapn`
-//   color:${props=>props.theme.colorText};
+ `
+ export const DesItem=styled.div`
+margin-bottom:9px ;
+color:${props=>props.theme.diactiveText};
+&>span{
+   margin-left:8px;
+}
+&.personal{
+    margin-bottom:4px ;
+}
+ `
+ export const Btn=styled.div`
+ display:flex ;
+ justify-content:flex-end;
+ align-items:center ;
+ font-size:14px ;
+ font-weight:700 ;
+ 
+ 
+ `
+
+ export const Cancelar=styled.div`
+ margin:0  8px;
+ cursor: pointer;
+ background-color:${props=>props.theme.mainBG} ;
+ color:${props=>props.theme.colorText};
+ padding:6px 16px ;
+ border-radius:8px ;
+ `
+ export const Detalhes=styled.div`
+  margin:0  8px;
+ cursor: pointer;
+ color:${props=>props.theme.white};
+ background-color:${props=>props.theme.blue} ;
+ padding:6px 16px ;
+ border-radius:8px ;
+ &>span{
+    margin-right:8px ;
+ }
+ `
+ export const Price=styled.span`
+ color:${props=>props.theme.colorText};
+ `
 
  

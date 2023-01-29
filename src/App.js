@@ -5,6 +5,7 @@ import Calender from './component/Calender/Calender';
 import Header from './component/Header/Header';
 import Scheduled from './component/Scheduled/Scheduled';
 import Information from './component/Inforamtion/Information';
+import Footer from './component/Footer/Footer';
 function App() {
   return (
     <div className="App">
@@ -14,6 +15,7 @@ function App() {
      <Scheduled />
      <Information />
      </div>
+     <Footer />
     </div>
   );
 }
