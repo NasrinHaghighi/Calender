@@ -23,10 +23,11 @@ function Annunce({roomInfo}) {
           <DesItem>
             <img src={AddressIcon} alt="address" /> <span>ID 1234551202 | Quarto nº 5  </span>
             </DesItem>
+            {roomInfo.roomInfo.price && 
           <DesItem>
             <img src={PriceIcon} alt="price" /> 
             <span>Renda mensal <Price>: € {roomInfo.roomInfo.price}</Price> </span>
-            </DesItem>
+            </DesItem>}
         </Description>
          
       </Info>

@@ -25,8 +25,13 @@ code {
     top: 33%;
 }
 
-.react-calendar__navigation button:enabled:hover {
-    background-color: #EEF7FE !important;
+.react-calendar__navigation__label__labelText--from::before {
+    position: absolute;
+    content: url("/src/images/arrow.png");
+    height: 8px;
+    width: 8px;
+    right: -1.5rem;
+    top: 15%;
 }
 
 .react-calendar__navigation__prev2-button {

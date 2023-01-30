@@ -13,19 +13,23 @@ function PersonalInfo({personInfo}) {
       <Description>
         <Tit>{personInfo.personInfo.name}</Tit>
         <DesItem className='personal'>
-        {personInfo.personInfo.nationality} · Masculino · {personInfo.personInfo.age} anos
+        {personInfo.personInfo.nationality && personInfo.personInfo.nationality }
+         {personInfo.personInfo.nationality && '· Masculino .' }
+          {personInfo.personInfo.age && personInfo.personInfo.age + 'anos'}
           </DesItem>
         <DesItem className='personal'>
        {personInfo.personInfo.job}
           </DesItem>
+          {personInfo.personInfo.entrada &&
         <DesItem className='personal'>
         Data de entrada :
           <Date>{personInfo.personInfo.entrada}</Date>
-          </DesItem>
+          </DesItem>}
+          {personInfo.personInfo.saida &&
           <DesItem className='personal'>
           Data de saída :
           <Date>{personInfo.personInfo.saida} </Date>
-          </DesItem>
+          </DesItem>}
       </Description>
        
     </Info>
