@@ -2,11 +2,11 @@
 /* eslint-disable no-undef */
 
 import React, {useState} from 'react'
-import Calendar from 'react-calendar';
+
 import 'react-calendar/dist/Calendar.css';
-import {CalendarWrapper,CalendarS,Dots,Span, Container, Header} from './styles.js'
+import {CalendarS,Dots,Span, Container, Header} from './styles.js'
 import { data } from '../../constant/MockData';
-import { useSelector, useDispatch } from 'react-redux'
+import {  useDispatch } from 'react-redux'
 import {setSelectedday} from '../../featuers/SelectedDaySlice'
 import CalenderIcon from '../../images/Icon.png'
 import {makeFormatDay} from '../../utils'
@@ -19,8 +19,9 @@ data.map((item)=>{
 })
 
 
-//add dots in calender day//
+//add dots in calender day//tilcontent provide by pakage//
 const tileContent = ({ date, view }) => {
+  //convert date from calender to m/dd/yy
     var formatDate=makeFormatDay(date) 
    
 if( view === 'month' && planedDays.includes(formatDate)){
@@ -51,6 +52,8 @@ function Calender() {
     const [value, onChange] = useState(new Date());
     const dispatch=useDispatch()
 
+
+    //get selectday by click on day in calender and save in redux//
     const handelClick=(value)=>{
     
         var formatDate=makeFormatDay(value) 

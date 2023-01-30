@@ -22,7 +22,7 @@ export const data=[
             plan:[
                 {time:'15:00',type:'Check-ins',personInfo: {name:'Mariana', entrada:'02/03/20223', saida:'02/08/2023', tel:'555555', email:'mmmmm@email.com', nationality:'German' ,age:'70-80', job:'Estudante na Universidade Porto'}, roomInfo:{room:'Room 11', location:'Ave Altino', price:'250'},  },
                 {time:'11:00',type:'Por agendar', personInfo: {name:'Helder', entrada:'02/25/20223', saida:'02/26/2023',tel:'5555555555', email:'eeeeeee@email.com', nationality:'American' ,age:'40-50', job:'carpinteiro'}, roomInfo:{room:'Room 32', location:'Rua de Arrabida', price:'750'}}, 
-                {time:'12:00',type:'Check-ins', personInfo: {name:'Patricia', entrada:'02/25/20223', saida:'02/26/2023',tel:'8888888888', email:'qqqqqqqqq@email.com', nationality:'spanish' ,age:'20-30', job:'trabalha no restaurante'}, roomInfo:{room:'Room 22', location:'Rua de Arrabida', price:'850'}}, 
+                {time:'12:00',type:'Confirmadas', personInfo: {name:'Patricia', entrada:'02/25/20223', saida:'02/26/2023',tel:'8888888888', email:'qqqqqqqqq@email.com', nationality:'spanish' ,age:'20-30', job:'trabalha no restaurante'}, roomInfo:{room:'Room 22', location:'Rua de Arrabida', price:'850'}}, 
               
             ]},
             {
@@ -31,7 +31,7 @@ export const data=[
                 plan:[
                     {time:'10:00',type:'Check-ins',personInfo: {name:'Mariana', entrada:'02/03/20223', saida:'02/08/2023', tel:'555555', email:'mmmmm@email.com', nationality:'German' ,age:'70-80', job:'Estudante na Universidade Porto'}, roomInfo:{room:'Room 11', location:'Ave Altino', price:'250'},  },
                     {time:'11:00',type:'Por agendar', personInfo: {name:'Helder', entrada:'02/25/20223', saida:'02/26/2023',tel:'5555555555', email:'eeeeeee@email.com', nationality:'American' ,age:'40-50', job:'carpinteiro'}, roomInfo:{room:'Room 32', location:'Rua de Arrabida', price:'750'}}, 
-                    {time:'12:00',type:'Check-ins', personInfo: {name:'Patricia', entrada:'02/25/20223', saida:'02/26/2023',tel:'8888888888', email:'qqqqqqqqq@email.com', nationality:'spanish' ,age:'20-30', job:'trabalha no restaurante'}, roomInfo:{room:'Room 22', location:'Rua de Arrabida', price:'850'}}, 
+                    {time:'12:00',type:'Confirmadas', personInfo: {name:'Patricia', entrada:'02/25/20223', saida:'02/26/2023',tel:'8888888888', email:'qqqqqqqqq@email.com', nationality:'spanish' ,age:'20-30', job:'trabalha no restaurante'}, roomInfo:{room:'Room 22', location:'Rua de Arrabida', price:'850'}}, 
                     {time:'18:00',type:'Os meus eventos', personInfo: {name:' Dr. Patricia',tel:'8888888888', email:'qqqqqqqqq@email.com' }, roomInfo:{room:'Smile Up 22', location:'Arrabida shopping'}}, 
                   
                 ]},
@@ -98,16 +98,7 @@ export const data=[
                                             {time:'20:00',type:'Confirmadas',personInfo: {name:'Mariana', entrada:'02/03/20223', saida:'02/08/2023', tel:'555555', email:'mmmmm@email.com', nationality:'German' ,age:'70-80', job:'Estudante na Universidade Porto'}, roomInfo:{room:'Room 11', location:'Ave Altino', price:'250'},  }, 
                                           
                                         ]},
-                                        {
-                                            id:11,
-                                            date:'3/31/2023',
-                                            plan:[                                  
-                                               
-                                            
-                                                
-                                                {time:'20:00',type:'Confirmadas',personInfo: {name:'Mariana', entrada:'02/03/20223', saida:'02/08/2023', tel:'555555', email:'mmmmm@email.com', nationality:'German' ,age:'70-80', job:'Estudante na Universidade Porto'}, roomInfo:{room:'Room 11', location:'Ave Altino', price:'250'},  }, 
-                                              
-                                            ]},
+                                     
     // },
 // },
 // {

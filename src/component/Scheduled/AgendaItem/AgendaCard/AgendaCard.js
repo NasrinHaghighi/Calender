@@ -2,6 +2,10 @@ import React from 'react'
 import {Conatiner, Time, Type, Info, Top, Bottom} from './styles'
 import { useDispatch } from 'react-redux'
 import {setSelectedday} from '../../../../featuers/SelectedEventSlice'
+
+
+
+//this function change color nad text of card depend of type of event//
 const typeColor=(type)=>{
     // eslint-disable-next-line default-case
     switch (type) {
@@ -33,9 +37,7 @@ const typeText=(type)=>{
 function AgendaCard({pla}) {
   const dispatch=useDispatch()
 
-//const plan =item.plan
-//console.log(pla)
-
+//get the event that user clicked nas save in redux
 const handelSelectedEvent=(pla)=>{
 dispatch(setSelectedday(pla))
 }
@@ -50,7 +52,7 @@ dispatch(setSelectedday(pla))
  <Type className={typeColor(pla.type)}></Type>
 
  <Info>
-     <Top>{typeText(pla.type)} {pla.name}</Top>
+     <Top>{typeText(pla.type)} {pla.personInfo.name}</Top>
      <Bottom>{pla.type === 'Os meus eventos' ? 'Address' : pla.roomInfo.room} . {pla.roomInfo.location}</Bottom>
  </Info>
 

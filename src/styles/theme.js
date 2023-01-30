@@ -12,6 +12,8 @@ export const themes = {
          diactiveText:'#8C9BA5',
          grayBorder:'#DFE3E6',
          boxShadow:'#00000040',
-         bg:'#F5F7FA'
+         bg:'#F5F7FA',
+         
+
 
      };
