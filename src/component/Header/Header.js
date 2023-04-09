@@ -13,7 +13,7 @@ function Header() {
         <Top>
             <Logo><img src={LogoIcon} alt="logo" /></Logo>
             <Right>
-                <Novas>Veja as novas funcionalidades</Novas>
+                <Novas>Veja asgghhghh novas funcionalidades</Novas>
                 <div><img src={BellIcon} alt="bell" /></div>
                 <div><img src={Userface} alt="bell" /></div>
                 <div>PT</div>

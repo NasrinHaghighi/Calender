@@ -23,11 +23,8 @@ const AgendaItem =({item})=> {
   return (
     <>
   {agendaType !== 'Todos' &&
-   
-       
-       // eslint-disable-next-line array-callback-return
+   // eslint-disable-next-line array-callback-return
        item.plan.map((pla, index)=>{
-     
        if( pla.type === agendaType){
 
         return  <ListItem >
@@ -37,11 +34,6 @@ const AgendaItem =({item})=> {
       }
        
     })}
-        
-     
-   
-    
-     
      
     {agendaType === 'Todos' &&
     <ListItem >

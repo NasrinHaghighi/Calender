@@ -10,13 +10,15 @@ import AgendaList from './AgendaList/AgendaList'
 import { useDispatch } from 'react-redux'
 import {setAgendaType} from '../../featuers/AgendaTypeSlice'
 
+
+
 function Scheduled() {
   const dispatch=useDispatch()
 const [activeTab, setActiveTab]=useState('Todos')//set active tab by click
     
 //save activetab in redux//
 const handelTab=(e)=>{
-  setActiveTab(e.target.innerHTML)
+setActiveTab(e.target.innerHTML)
 dispatch(setAgendaType(e.target.innerHTML))
 }
 

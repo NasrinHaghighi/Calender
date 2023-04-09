@@ -46,8 +46,6 @@ if( view === 'month' && planedDays.includes(formatDate)){
 }}
 
 ;
-
-
 function Calender() {
     const [value, onChange] = useState(new Date());
     const dispatch=useDispatch()
@@ -55,7 +53,6 @@ function Calender() {
 
     //get selectday by click on day in calender and save in redux//
     const handelClick=(value)=>{
-    
         var formatDate=makeFormatDay(value) 
         dispatch(setSelectedday(formatDate))
     }
@@ -65,7 +62,7 @@ function Calender() {
     <Container>
      <Header>
         <img src={CalenderIcon} alt="calender" />
-       <p>Calendário</p>
+       <p>Calendári</p>
        </Header>
        
       <CalendarS onChange={onChange} value={value} 

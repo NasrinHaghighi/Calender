@@ -43,9 +43,9 @@ useEffect(() => {
     <div>
          <Annunce roomInfo={flag ? selectedEventbyUser : firstEvent}/> 
   
-       <PersonalInfo personInfo={flag ? selectedEventbyUser : firstEvent}/>
+        <PersonalInfo personInfo={flag ? selectedEventbyUser : firstEvent}/>
 
-<ContactInfo personInfo={flag ? selectedEventbyUser : firstEvent}/>
+       <ContactInfo personInfo={flag ? selectedEventbyUser : firstEvent}/>
        
     </div>
   )

@@ -34,13 +34,3 @@ export default AgendaList
 
 
 
-// let SelectedDayAndMore=[]
-//   useEffect(() => {
-//   // eslint-disable-next-line no-lone-blocks
-//   {data.filter((d)=>{
-//     if( d.date >= selectedDay){
-//       SelectedDayAndMore.push(d)
-//     }
-   
-//   })}
-//   }, [selectedDay])
