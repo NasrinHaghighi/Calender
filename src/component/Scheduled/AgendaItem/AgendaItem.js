@@ -15,7 +15,7 @@ const AgendaItem =({item})=> {
  //convert date to text format for title//
   const date=new Date(item.date)
   const dayName = days[date.getDay()];
-  const day = date.getUTCDate();
+  const day = date.getUTCDate()+1;//*fix number of day*/
   const monthName=months[date.getMonth()]
 
 

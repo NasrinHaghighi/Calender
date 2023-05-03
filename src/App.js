@@ -14,7 +14,7 @@ function App() {
       <Calender />
       <Scheduled />
      <Information />
-     <div>gggggggggggg</div>  
+   
      </div>
      <Footer />
     </div>

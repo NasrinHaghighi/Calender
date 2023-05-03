@@ -55,6 +55,7 @@ function Calender() {
     const handelClick=(value)=>{
         var formatDate=makeFormatDay(value) 
         dispatch(setSelectedday(formatDate))
+        console.log(value)
     }
   return (
 
