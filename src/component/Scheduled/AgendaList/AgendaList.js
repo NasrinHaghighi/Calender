@@ -10,13 +10,15 @@ import { useSelector } from 'react-redux'
 function AgendaList() {
   const selectedDay=useSelector(state=>state.selectedDay.selectedDay)
 console.log(selectedDay)
-
+const selectedDate = new Date(selectedDay);
 //filter day with plan from api based on user selected day
   const SelectedDayAndMore=data.filter((d)=>{
-    return d.date >= selectedDay
+    const currentDate = new Date(d.date);
+    return currentDate >= selectedDate;
+
   })
 
-   
+  console.log((SelectedDayAndMore))
   return (
     <Container>
       {

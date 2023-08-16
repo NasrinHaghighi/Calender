@@ -11,6 +11,7 @@ export const SelectedDaySlice = createSlice({
  
   
     setSelectedday: (state, action) => {
+      //console.log(`DAY THAT USER CLIICK IN CALENDER + ${action.payload}`)
       state.selectedDay = action.payload
     },
   },

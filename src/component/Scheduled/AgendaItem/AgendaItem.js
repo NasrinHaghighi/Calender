@@ -7,10 +7,10 @@ import AgendaCard from './AgendaCard/AgendaCard'
 
 
 const AgendaItem =({item})=> {
- 
+
  const agendaType=useSelector((state=>state.agendaType.agendaType))
- //console.log(agendaType)
-   
+
+   console.log(`item + ${item.date}`)
 
  //convert date to text format for title//
   const date=new Date(item.date)
@@ -19,7 +19,7 @@ const AgendaItem =({item})=> {
   const monthName=months[date.getMonth()]
 
 
-   
+   //console.log( day, monthName)
   return (
     <>
   {agendaType !== 'Todos' &&

@@ -18,17 +18,18 @@ data.map((item)=>{
     planedDays.push(item.date)
 })
 
-
+console.log(planedDays)
 //add dots in calender day//tilcontent provide by pakage//
 const tileContent = ({ date, view }) => {
   //convert date from calender to m/dd/yy
     var formatDate=makeFormatDay(date) 
-   
+   console.log(formatDate)
 if( view === 'month' && planedDays.includes(formatDate)){
   let day=  data.find(d=>d.date===formatDate)
   let plantype =day.plan.map(pl=>pl.type)
-  //console.log(plantype)
+  console.log(plantype)
    return (<Dots> {plantype.map((pla)=>{
+    console.log(pla)
         if(pla === 'Check-ins'){
           return  <Span style={{backgroundColor:'#A3E31A'}}>*</Span>
         }else if(pla === 'Confirmadas'){
@@ -55,7 +56,8 @@ function Calender() {
     const handelClick=(value)=>{
         var formatDate=makeFormatDay(value) 
         dispatch(setSelectedday(formatDate))
-        console.log(value)
+        console.log(value) 
+        // Thu Oct 05 2023 00:00:00 GMT+0100 (Western European Summer Time)
     }
   return (
 
