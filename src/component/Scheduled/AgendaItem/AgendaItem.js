@@ -16,7 +16,7 @@ const AgendaItem =({item})=> {
   const date=new Date(item.date)
   const dayName = days[date.getDay()];
   console.log(dayName)
-  const day = date.getUTCDate()+1;//*fix number of day*/****remember this that to b efixed in the api */
+  const day = date.getUTCDate();//*fix number of day*/****remember this that to b efixed in the api */
   const monthName=months[date.getMonth()]
 
 

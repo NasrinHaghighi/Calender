@@ -12,7 +12,7 @@ export const makeFormatDay=(date)=>{
    if(mm<10){
     mm='0'+mm
   }
-     var formatDate= (date.getMonth() +1) + '/' +dd + '/' +  date.getFullYear();
+     var formatDate= (date.getMonth()+1) + '/' +dd + '/' +  date.getFullYear();
      console.log(formatDate)
      return formatDate
  }
